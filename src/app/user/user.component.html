@@ -1,0 +1,18 @@
+<section>
+  @if(isLoggedIn){
+    <p>Bienvenido {{username}}</p>
+    <img
+      (click)="greet()"
+      alt="photo"
+      src="https://github.com/fenrirberserker.png"/>
+  } @else {
+    <p>Iniciar sesion</p>
+    <button
+      (click)="isLoggedIn = true"
+    >Login</button>
+  }
+  <app-games username="{{username}}"></app-games>
+</section>
+
+
+
