@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 @Component({
@@ -10,6 +10,7 @@ import {CommonModule} from '@angular/common';
 })
 export class GamesComponent {
   @Input() username = '';
+  @Output() addFavoriteEvent = new EventEmitter<string>();
 
   games = [
     {
@@ -25,5 +26,10 @@ export class GamesComponent {
       name:'AOM'
     }
   ]
+
+  fav(gameName:string){
+    // alert(`A ${this.username} le gusta ${gameName}`);
+    this.addFavoriteEvent.emit(gameName);
+  }
 
 }

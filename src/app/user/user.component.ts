@@ -15,7 +15,11 @@ export class UserComponent {
 
   username = 'Fenrir';
   isLoggedIn = false;
+  favGame = '';
 
+  getFavorite(gameName: string){
+    this.favGame = gameName;
+  }
 
   greet(){
     alert("Hola")
