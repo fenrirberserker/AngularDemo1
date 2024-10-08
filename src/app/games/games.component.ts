@@ -9,7 +9,9 @@ import {CommonModule} from '@angular/common';
   styleUrl: './games.component.css'
 })
 export class GamesComponent {
+  //parent -> child
   @Input() username = '';
+  //child -> parent
   @Output() addFavoriteEvent = new EventEmitter<string>();
 
   games = [

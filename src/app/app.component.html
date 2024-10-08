@@ -1,2 +1,35 @@
 <h1>Hola mundo desde {{city.toUpperCase() }}{{ 1+1}}</h1>
 <app-user></app-user>
+
+<div>
+
+  <article>
+    <h1>Angular</h1>
+    <p>
+      Laoreet vehicula dictum risus augue arcu. Facilisi etiam imperdiet ut. Netus curabitur felis dictum ultricies. Dignissim sociosqu justo lectus tellus ornare suscipit pharetra laoreet himenaeos ornare. Ante penatibus urna ad accumsan vehicula integer est et ornare egestas montes. Nec dui imperdiet mi phasellus litora, aptent rhoncus hendrerit. Quisque, porta aenean tempor tristique. Malesuada.
+    </p>
+    <p>
+      Montes lobortis ultrices sed nam fusce maecenas egestas tempor pharetra magnis mollis! Gravida, pellentesque natoque in auctor pharetra! Parturient purus mollis duis, nam etiam. Curae; vehicula quam dignissim parturient pharetra posuere natoque pellentesque inceptos eleifend vulputate. Posuere auctor eros viverra morbi tortor magna elit in quisque lobortis porttitor sed? Suscipit platea rutrum phasellus lorem eleifend class. Est montes hac porta cum lobortis molestie, cum amet cras tempor litora? Massa proin elit adipiscing vel. Ad primis platea parturient consectetur. Metus quisque, in.
+    </p>
+    <p>
+      Conubia laoreet sodales natoque hendrerit magnis malesuada tempus pharetra accumsan? Suscipit fringilla semper commodo convallis vestibulum purus dis ante lacinia id elementum. Odio tincidunt scelerisque sociosqu! Aenean potenti auctor sem iaculis enim non, justo dictum convallis dignissim dictumst. Maecenas ornare auctor netus dis etiam sagittis sapien luctus, elementum sed? Blandit, vel aptent venenatis. Vestibulum et, in integer accumsan vivamus a gravida sollicitudin accumsan proin. Eleifend integer cursus tincidunt rutrum malesuada odio erat eu integer ullamcorper risus.
+    </p>
+    <p>
+      Natoque commodo congue, dui etiam in. Diam duis nostra sodales odio felis parturient leo vitae at fermentum. Arcu nisi nullam proin libero at lacinia vestibulum feugiat. Auctor odio ut turpis netus! Justo fusce venenatis netus, condimentum justo aptent mi inceptos sem justo? At tortor massa ut sapien scelerisque mus. Nam odio.
+    </p>
+    <p>
+      At potenti himenaeos vulputate erat, laoreet iaculis pellentesque magnis vehicula fusce venenatis? Lacus pharetra enim, sociis scelerisque mattis condimentum litora morbi mauris varius habitasse. Morbi sapien tellus ut tellus eleifend porta curabitur hendrerit; ac vitae semper. Penatibus dictum nisl pharetra amet egestas lacus dictum aenean accumsan netus mauris! Est fringilla tempus duis at donec dignissim senectus tempus. Vitae sociis adipiscing natoque posuere nulla placerat elit purus varius turpis augue ut. Elit dui primis netus nunc lacus etiam. Velit porta litora lorem, etiam erat mus mus sapien.
+    </p>
+  </article>
+  <!--lazy loading like-->
+  @defer (on viewport){
+    <app-comments></app-comments>
+  } @placeholder {
+    <p>.</p>
+  } @loading {
+    <p>Cargando comentarios...</p>
+  }
+
+</div>
+
+
